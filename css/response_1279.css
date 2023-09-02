@@ -1,0 +1,145 @@
+@media print,
+(max-width: 1279px)
+{
+    /*--------------------
+        Vacancies head
+    --------------------*/
+    .vacancies_head
+    {
+        padding: 48px 0 40px;
+    }
+
+
+    .vacancies_head .title
+    {
+        font-size: 30px;
+    }
+
+
+
+    /*--------------------------
+        Vacancies advantages
+    --------------------------*/
+    .vacancies_advantages
+    {
+        padding: 48px 0;
+    }
+
+
+    .vacancies_advantages .row
+    {
+        margin-left: -80px;
+    }
+
+    .vacancies_advantages .row > *
+    {
+        width: calc(33.333% - 80px);
+        margin-left: 80px;
+    }
+
+
+    .vacancies_advantages .item
+    {
+        font-size: 16px;
+    }
+
+
+    .vacancies_advantages .item .icon
+    {
+        width: 124px;
+        height: 130px;
+        margin-bottom: 4px;
+        padding: 36px;
+    }
+
+
+
+    /*---------------
+        Vacancies
+    ---------------*/
+    .vacancies
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .vacancies .vacancy
+    {
+        padding: 45px 0;
+    }
+
+
+    .vacancies .vacancy .name
+    {
+        font-size: 24px;
+    }
+
+
+    .vacancies .vacancy .date
+    {
+        font-size: 15px;
+    }
+
+
+    .vacancies .vacancy .row > *
+    {
+        max-width: 260px;
+    }
+
+
+    .vacancies .vacancy .title
+    {
+        font-size: 24px;
+    }
+
+
+    .vacancies .vacancy .features > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+    .vacancies .vacancy .info + .info
+    {
+        margin-top: 28px;
+    }
+
+
+    .vacancies .vacancy .features .label
+    {
+        font-size: 24px;
+    }
+
+    .vacancies .vacancy .features .val
+    {
+        font-size: 15px;
+
+        margin-left: 8px;
+    }
+
+
+    .vacancies .vacancy ul li
+    {
+        font-size: 15px;
+    }
+
+
+    .vacancies .vacancy .phone
+    {
+        font-size: 15px;
+    }
+
+
+    .vacancies .vacancy .email
+    {
+        font-size: 15px;
+
+        margin-top: 16px;
+    }
+
+
+    .vacancies .vacancy .send_resume_btn
+    {
+        margin-top: 28px;
+    }
+}
