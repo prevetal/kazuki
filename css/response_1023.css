@@ -1,0 +1,183 @@
+@media print,
+(max-width: 1023px)
+{
+    /*--------------------
+        Vacancies head
+    --------------------*/
+    .vacancies_head
+    {
+        padding: 40px 0;
+    }
+
+
+    .vacancies_head .title
+    {
+        font-size: 28px;
+    }
+
+
+
+    /*--------------------------
+        Vacancies advantages
+    --------------------------*/
+    .vacancies_advantages
+    {
+        padding: 40px 0;
+    }
+
+
+    .vacancies_advantages .row
+    {
+        margin-left: -40px;
+    }
+
+    .vacancies_advantages .row > *
+    {
+        width: calc(33.333% - 40px);
+        margin-left: 40px;
+    }
+
+
+    .vacancies_advantages .item
+    {
+        font-size: 15px;
+    }
+
+
+    .vacancies_advantages .item .icon
+    {
+        width: 116px;
+        height: 122px;
+        padding: 34px;
+    }
+
+
+
+    /*---------------
+        Vacancies
+    ---------------*/
+    .vacancies .vacancy .name
+    {
+        font-size: 22px;
+    }
+
+
+    .vacancies .vacancy .date
+    {
+        font-size: 14px;
+    }
+
+
+    .vacancies .vacancy .row > *.col
+    {
+        width: calc((100% - 238px) / 2);
+        max-width: 100%;
+    }
+
+    .vacancies .vacancy .row > *:first-child
+    {
+        width: 100%;
+        margin-bottom: 28px;
+    }
+
+
+    .vacancies .vacancy .title
+    {
+        font-size: 22px;
+    }
+
+
+    .vacancies .vacancy .features
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .vacancies .vacancy .features > * + *
+    {
+        margin-top: 0;
+        margin-left: 40px;
+    }
+
+
+    .vacancies .vacancy .info + .info
+    {
+        margin-top: 24px;
+    }
+
+
+    .vacancies .vacancy .features .label
+    {
+        font-size: 22px;
+    }
+
+    .vacancies .vacancy .features .val
+    {
+        font-size: 14px;
+    }
+
+
+    .vacancies .vacancy ul li
+    {
+        font-size: 14px;
+    }
+
+
+    .vacancies .vacancy .phone
+    {
+        font-size: 14px;
+    }
+
+
+    .vacancies .vacancy .email
+    {
+        font-size: 14px;
+    }
+
+
+    .vacancies .vacancy .send_resume_btn
+    {
+        margin-top: 24px;
+    }
+
+
+
+
+    /*----------------
+        Text block
+    ----------------*/
+    .text_block blockquote.left,
+    .text_block blockquote.right
+    {
+        width: 100%;
+    }
+
+
+    .text_block blockquote.left
+    {
+        float: none;
+
+        margin-right: 0;
+    }
+
+    .text_block blockquote.right
+    {
+        float: none;
+
+        margin-left: 0;
+    }
+
+
+    .text_block blockquote
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        width: 100%;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+}

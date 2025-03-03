@@ -1,0 +1,35 @@
+@media (max-width: 479px)
+{
+    /*--------------------
+        Vacancies head
+    --------------------*/
+    .vacancies_head .title
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*---------------
+        Vacancies
+    ---------------*/
+    .vacancies .vacancy .name:before
+    {
+        top: 7px;
+
+        width: 8px;
+        height: 8px;
+    }
+
+
+    .vacancies .vacancy .date
+    {
+        margin-top: 12px;
+    }
+
+
+    .vacancies .vacancy .features > * + *
+    {
+        margin-left: auto;
+    }
+}
