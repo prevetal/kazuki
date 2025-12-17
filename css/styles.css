@@ -112,7 +112,6 @@ body
 .wrap
 {
     position: relative;
-    z-index: 9;
 
     display: flex;
     overflow: hidden;
@@ -120,6 +119,8 @@ body
 
     min-width: 360px;
     min-height: 100%;
+
+    z-index: 9;
 }
 
 
@@ -133,16 +134,90 @@ body
 
 
 /*---------------
+    Menu block
+---------------*/
+.menu-block a.image
+{
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 78px;
+
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+
+/*-----------
+    Aside
+-----------*/
+.aside__list
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.aside__list-item
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.aside__list-item .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+}
+
+
+.aside__list-item img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.aside__list-item span
+{
+    top: 0;
+
+    width: calc(100% - 56px);
+    margin-right: 0;
+}
+
+
+
+/*---------------
     Vacancies
 ---------------*/
 .vacancies button
 {
+    display: inline-block;
+
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
-
-    display: inline-block;
 
     cursor: pointer;
     vertical-align: top;
@@ -160,10 +235,10 @@ body
 .vacancies_head
 {
     position: relative;
-    z-index: 3;
 
     padding: 71px 0 59px;
 
+    z-index: 3;
     text-align: center;
 
     color: #fff;
@@ -174,10 +249,11 @@ body
 .vacancies_head .container
 {
     position: relative;
-    z-index: 3;
 
     margin-top: 0;
     margin-bottom: 0;
+
+    z-index: 3;
 }
 
 
@@ -191,13 +267,13 @@ body
 .vacancies_head .bg
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
     width: 100%;
     height: 100%;
 
+    z-index: 1;
     pointer-events: none;
 
     object-fit: cover;
@@ -245,12 +321,12 @@ body
 
 .vacancies_advantages .item
 {
-    font-size: 18px;
-    line-height: normal;
-
     display: block;
 
     padding: 0 12px;
+
+    font-size: 18px;
+    line-height: normal;
 
     text-align: center;
 
@@ -277,24 +353,26 @@ body
 .vacancies_advantages .item .icon img
 {
     position: relative;
-    z-index: 3;
 
     display: block;
 
     max-width: 100%;
     max-height: 100%;
+
+    z-index: 3;
 }
 
 
 .vacancies_advantages .item .icon .bg
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
     width: 100%;
     height: 100%;
+
+    z-index: 1;
 }
 
 
@@ -317,12 +395,12 @@ body
 
 .vacancies .vacancy
 {
-    line-height: normal;
-
     width: 1240px;
     max-width: 100%;
     margin: 0 auto;
     padding: 47px 0;
+
+    line-height: normal;
 
     color: #372919;
     background: url(../images/bg_vacancy.png) 50% 0 repeat-x, url(../images/bg_vacancy.png) 50% 100% repeat-x;
@@ -336,12 +414,12 @@ body
 
 .vacancies .vacancy .name
 {
-    font-size: 25px;
-    font-weight: 700;
-
     position: relative;
 
     padding-left: 20px;
+
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .vacancies .vacancy .name:before
@@ -364,10 +442,10 @@ body
 
 .vacancies .vacancy .date
 {
+    margin-top: 18px;
+
     font-family: 'Inter';
     font-size: 16px;
-
-    margin-top: 18px;
 
     color: #828282;
 }
@@ -392,10 +470,10 @@ body
 
 .vacancies .vacancy .title
 {
+    margin-bottom: 20px;
+
     font-family: 'Neucha', cursive;
     font-size: 26px;
-
-    margin-bottom: 20px;
 }
 
 
@@ -428,17 +506,15 @@ body
 
 .vacancies .vacancy .features .val
 {
+    margin-left: 12px;
+
     font-family: 'Inter';
     font-size: 16px;
-
-    margin-left: 12px;
 }
 
 
 .vacancies .vacancy ul li
 {
-    font-size: 16px;
-
     position: relative;
 
     display: block;
@@ -447,6 +523,8 @@ body
     padding-left: 20px;
 
     list-style-type: none;
+
+    font-size: 16px;
 }
 
 .vacancies .vacancy ul li + li
@@ -473,15 +551,15 @@ body
 
 .vacancies .vacancy .phone
 {
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: 500;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
 
     color: #0f903d;
 }
@@ -504,10 +582,6 @@ body
 
 .vacancies .vacancy .email
 {
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: 500;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -515,6 +589,10 @@ body
     justify-content: flex-start;
 
     margin-top: 17px;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
 
     color: #372919;
 }
@@ -537,11 +615,11 @@ body
 
 .vacancies .vacancy .send_resume_btn
 {
-    font-size: 15px;
-    font-weight: 700;
-
     margin-top: 35px;
     padding: 12px 24px;
+
+    font-size: 15px;
+    font-weight: 700;
 
     color: #592616;
     border-radius: 8px;
@@ -567,10 +645,6 @@ body
 
 .text_block blockquote
 {
-    font-family: 'Neucha';
-    font-size: 24px;
-    line-height: 30px;
-
     position: relative;
 
     display: flex;
@@ -582,6 +656,10 @@ body
     margin-bottom: 70px;
     padding: 42px 42px 42px 73px;
 
+    font-family: 'Neucha';
+    font-size: 24px;
+    line-height: 30px;
+
     color: #372919;
     border-radius: 8px;
     background: #fdefcc;
@@ -591,7 +669,6 @@ body
 .text_block blockquote:before
 {
     position: absolute;
-    z-index: 1;
     top: -34px;
     left: -7px;
 
@@ -601,6 +678,7 @@ body
     height: 90px;
 
     content: '';
+    z-index: 1;
     pointer-events: none;
 
     background: url(../images/bg_blockquote.svg) 0 0/100% 100% repeat-x;
@@ -737,11 +815,11 @@ body
 
 .text_block ol li:before
 {
-    font-weight: 700;
-
     position: absolute;
     top: 0;
     left: 0;
+
+    font-weight: 700;
 
     content: counter(li) '.';
     counter-increment: li;
